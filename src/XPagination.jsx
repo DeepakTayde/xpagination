@@ -1,5 +1,4 @@
 import React from "react";
-import "./Xpagination.css";
 
 const XPagination = () => {
     const [employees, setEmployees] = React.useState([]);
