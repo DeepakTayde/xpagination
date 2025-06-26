@@ -1,0 +1,52 @@
+.xPagination {
+  min-height: 100vh;
+  font-size: calc(10px + 2vmin);
+  background-color: #f0f0f0;
+}
+
+.xPaginationContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+.xPaginationTable {
+  border-bottom: 2px solid #099458;
+  width: 90%;
+  
+}
+.xPaginationTable > thead > tr > th {
+  background-color: #099458;
+  color: white;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 10px;
+  text-align: left;
+}
+.xPaginationTable > tbody > tr >td{
+  font-size: 16px;
+  padding: 5px 10px;
+}
+
+.xPaginationControls{
+    display: flex;
+    margin-top: 20px;
+    gap: 20px;
+}
+.xPaginationControls span{
+    background-color:#099458;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    color: #f0f0f0;
+    font-size: 16px;
+}
+.xPaginationButton{
+    background-color:#099458;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 16px;
+    color: #f0f0f0;
+}
