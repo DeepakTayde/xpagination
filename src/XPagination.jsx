@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import "./XPagination.css";
 
 const XPagination = () => {
-    const [employees, setEmployees] = React.useState([]);
-    const [currentPage, setCurrentPage] =React.useState(1);
+    const [employees, setEmployees] = useState([]);
+    const [currentPage, setCurrentPage] =useState(1);
     const itemsPerPage = 10;
 
     const startIndex = (currentPage-1)*itemsPerPage;
@@ -23,7 +24,7 @@ const XPagination = () => {
         }
     }
 
-    React.useEffect(() => {
+    useEffect(() => {
       
             const fetchEmployeesData = async ()=>{
                 try {
