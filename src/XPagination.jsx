@@ -35,6 +35,7 @@ const XPagination = () => {
                 const data = await response.json();
                 setEmployees(data);
                 } catch (error) {
+                    alert('failed to fetch data')
                     console.error("Error fetching employee data:", error);
                     
                 }
@@ -71,11 +72,11 @@ const XPagination = () => {
           </tbody>
         </table>
         <div className="xPaginationControls">
-          <button className="xPaginationButton" id="prevBtn" onClick={handlePrevPage} disabled={currentPage===1}>
+          <button className="xPaginationButton" id="prevBtn" onClick={handlePrevPage} >
             Previous
           </button>
           <span className="xPaginationPageInfo">{currentPage}</span>
-          <button className="xPaginationButton" id="nextBtn" onClick={handleNextPage} disabled={currentPage === totalPages}>
+          <button className="xPaginationButton" id="nextBtn" onClick={handleNextPage} >
             Next
           </button>
         </div>
